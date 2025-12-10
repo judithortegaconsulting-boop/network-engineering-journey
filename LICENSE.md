@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 [Judith NetworkEngineeringJourney]
+Copyright (c) 2025 Karina Judith Ortega NetworkEngineeringJourney
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
