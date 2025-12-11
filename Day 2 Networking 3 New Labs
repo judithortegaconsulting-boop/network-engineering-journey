@@ -1,0 +1,42 @@
+Applying Professor Messer's Network Device Concepts*
+
+Lab 1: Basic Switch Network
+Goal: Connect 2 PCs through a switch  
+Devices: 2x PC-PT, 1x Switch-PT 2960  
+Cables: Copper Straight-Through (PC → Switch)  
+IPs: PC1=192.168.1.10, PC2=192.168.1.20  
+Test: ping 192.168.1.20
+
+Learned: Switches connect devices on same network (Layer 2)
+
+
+Lab 2: Add Router as Gateway
+Added: Router-PT 1941  
+Cable: Straight-Through (Switch → Router Fa0/0)  
+Router Config:
+enable
+conf t
+int fa0/0
+ip add 192.168.1.1 255.255.255.0
+no shut
+end
+write memory
+
+Updated PCs: Gateway = 192.168.1.1  
+Tests: 
+- ping 192.168.1.20 (PC to PC)
+- ping 192.168.1.1 (PC to Router)
+
+Learned: Routers connect networks, act as gateways (Layer 3)
+
+
+Lab 3: Web Server Setup
+Changed: PC2 → Web Server  
+Server Config: 
+- IP: 192.168.1.100
+- Enable HTTP service
+- Add simple webpage
+
+Test: Browser → http://192.168.1.100
+
+Learned: Servers provide services, clients consume them
